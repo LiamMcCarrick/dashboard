@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1e5ec;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.sidebar {
+    grid-row: 1/5;
+    background-color: #568ec9;
+}
+
+.header, .nav {
+    grid-column: 2/4;
+}
+
+.nav {
+    grid-row: 2/3;
+}
+
+.projects {
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+.announcements, .trending {
+    grid-column: 3/4;
+}
+
+.trending {
+    grid-row: 4/5;
+}
+
+.header, .nav, .card {
+    background-color: #ffffff;
+}
+
+.img {
+    border: 1px solid #e1e5ec ;
+    background-color: #e1e5ec;
+    border-radius: 20px;
+    width: 40px;
+    height: 20px;
+}
