@@ -44,7 +44,7 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: .5fr 4fr 1fr 1fr 1fr;
+    grid-template-columns: .5fr 4fr 2fr .5fr 1fr;
     padding-top: 16px;
     padding-bottom: 28px;
     gap: 12px;
@@ -72,8 +72,8 @@ input {
 .nav {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: .5fr 4fr 1fr 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: .5fr 4fr 3fr;
+    gap: 10px;
 }
 
 .nav .img:nth-child(1) {
@@ -81,8 +81,14 @@ input {
     justify-self: end;
 }
 
+.button-container {
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 20px;
+}
+
 button {
-    place-self: center;
     border-radius: 8px;
     width: 90px;
     height: 30px;
