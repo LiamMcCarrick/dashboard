@@ -17,6 +17,29 @@ body {
 .sidebar {
     grid-row: 1/5;
     background-color: #568ec9;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.title, .link {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link {
+    margin-bottom: 12px;
+}
+
+.title, .side-nav {
+    margin-bottom: 40px;
+}
+
+.link:nth-child(2) {
+    justify-self: start;
 }
 
 .header {
@@ -67,8 +90,6 @@ button {
     color: #ffffff;
 }
 
-
-
 .projects {
     grid-column: 2/3;
     grid-row: 3/5;
@@ -88,4 +109,5 @@ button {
     border-radius: 20px;
     width: 40px;
     height: 20px;
+    color: black;
 }
