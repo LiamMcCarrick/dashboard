@@ -65,7 +65,7 @@ input {
     grid-column: 2/4;
 }
 
-.header, .nav, .card {
+.header, .nav, .projects .card {
     background-color: #ffffff;
 }
 
@@ -95,12 +95,58 @@ button {
     grid-row: 3/5;
 }
 
+.projects h1 {
+    margin-left: 8px;
+    margin-bottom: -4px;
+}
+
+.projects .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 8px;
+}
+
+.projects .card {
+    border-radius: 12px;
+    margin: 8px;
+    padding: 20px;
+    border-left: 4px solid #ddb24c;
+}
+
+.media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    padding-left: 40px;
+}
+
+.announcements .card:nth-child(1),
+.announcements .card:nth-child(2) {
+    border-bottom: 2px solid #e1e5ec;
+}
+
+.announcements .card-container,
+.trending .card-container {
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin-left: 8px;
+    margin-right: 24px;
+    padding: 18px;
+}
+
 .announcements, .trending {
     grid-column: 3/4;
 }
 
-.trending {
-    grid-row: 4/5;
+.trending .card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.trending .card .img {
+    align-self: center;
 }
 
 .img {
